@@ -42,6 +42,7 @@
             colOps = new DataGridViewTextBoxColumn();
             colResult = new DataGridViewTextBoxColumn();
             lblStatus = new Label();
+            btnHelp = new Button();
             ((System.ComponentModel.ISupportInitialize)numSize).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numTarget).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridResults).BeginInit();
@@ -138,7 +139,7 @@
             gridResults.Name = "gridResults";
             gridResults.RowHeadersVisible = false;
             gridResults.RowHeadersWidth = 51;
-            gridResults.Size = new Size(1078, 279);
+            gridResults.Size = new Size(1110, 279);
             gridResults.TabIndex = 7;
             // 
             // colName
@@ -169,8 +170,19 @@
             // 
             lblStatus.Location = new Point(34, 523);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(508, 23);
+            lblStatus.Size = new Size(509, 25);
             lblStatus.TabIndex = 0;
+            // 
+            // btnHelp
+            // 
+            btnHelp.Font = new Font("Segoe UI", 10F);
+            btnHelp.Location = new Point(1041, 519);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(103, 29);
+            btnHelp.TabIndex = 8;
+            btnHelp.Text = "Справка";
+            btnHelp.UseVisualStyleBackColor = true;
+            btnHelp.Click += btnHelp_Click;
             // 
             // Form1
             // 
@@ -178,6 +190,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1156, 590);
+            Controls.Add(btnHelp);
             Controls.Add(lblStatus);
             Controls.Add(gridResults);
             Controls.Add(btnRun);
@@ -211,5 +224,6 @@
         private DataGridViewTextBoxColumn colOps;
         private DataGridViewTextBoxColumn colResult;
         private Label lblStatus;
+        private Button btnHelp;
     }
 }
