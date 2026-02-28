@@ -51,7 +51,7 @@
 ---
 
 ## Технологический стек
-- **Язык**: C# 10.0+
+- **Язык**: C# 12.0
 - **Платформа**: .NET (Windows Forms)
 - **Профилирование**: System.Diagnostics (`Stopwatch`)
 - **Тестирование**: MSTest / NUnit Framework
